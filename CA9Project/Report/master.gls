@@ -1,0 +1,17 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{ML}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossentry{RL}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{SARSA}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{vi}}}%
+\glossentry{SRL}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{vi}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossentry{WDN}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{vi}}}%
+\end{theglossary}\glossarypostamble

@@ -1,0 +1,44 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Preface}{vii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Project Description}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Report outline}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Reinforcement Learning}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction to Reinforcement Learning}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The Bellman Equation}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Policies}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Temporal Difference Methods}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Function Approximation}{11}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Water Distribution Networks}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Test Setup}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Consumption Model}{17}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Water Distribution Networks and Reinforcement Learning}{18}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Cost Function and State-Action Selection}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Tabular Q-learning}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Function Approximation Q-learning}{22}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Continuous Height, and Discrete Time and Action}{23}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Continuous Height and Time, and Discrete Action}{26}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Simulation}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tabular Q-learning}{30}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Hyperparameter Sweep}{30}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Tabular Results}{37}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Continuous Height, and Discrete Time and Action Q-Learning}{40}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Continuous Level and Time, Discrete Action Q-Learning}{43}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Method Comparison}{45}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Laboratory Results}{46}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Laboratory Setup}{48}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Results}{49}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Discussion}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Demand Balancing}{51}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Hyperparameters}{52}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Premature Convergence}{52}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Extending Radial Basis Center Placement}{53}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Barrier Overflow}{54}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Implicit Exploration}{56}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Generalisation to other Water Distribution Networks and Real World Implementation}{56}{section.7.7}%
+\contentsline {chapter}{\numberline {8}Conclusion}{57}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Continuous height discrete time and action Q-Learning MATLAB Script}{58}{appendix.A}%
+\contentsline {section}{\numberline {A.1}New state script}{58}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Weight update MATLAB script}{59}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Simulink setup}{62}{section.A.3}%

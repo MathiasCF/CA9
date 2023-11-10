@@ -1,0 +1,52 @@
+\chapter{Introduction}\label{chap:Introduction}
+This chapter first present the motivation behind the project, then briefly describes the difficulties of modelling a water distribution network. The chapter also presents the project description. Lastly, the report outline is presented.
+
+\section{Motivation}\label{sec:introMotivation}
+Water is a vital necessity for humans and all other creatures existence on planet earth, but water scarcity is still a huge issue that many countries face on a global level. Even though UN Sustainable Development Goal 6.1 and 6.2 respectively states \cite{UN_SDG6162}:
+
+\begin{itemize}
+\item By 2030, (we must) achieve universal and equitable access to safe and affordable drinking water for all.
+\item By 2030, (we must) achieve access to adequate and equitable sanitation and hygiene for all and end open defecation, paying special attention to the needs of women and girls and those in vulnerable situations.
+\end{itemize}
+
+UNs 2021 update \cite{FAOandUNWater2021} indicates that we are far away from reaching the goals - and we also were before the Covid-19 crisis. 
+
+Meeting the targets set for 2030 will require a 4x increase in pace of progress \cite{UN_SDG6}. Furthermore the Russia-Ukraine war has created an energy-crisis, with the cost of energy skyrocketing all over the world, with electricity prices increasing by 57 percent in in Denmark in the first half of 2022 \cite{EuroStat} and all except five European member countries experienced an increase during said period.   
+
+It is therefore critical that new control methods for water distribution are researched, such that supply of affordable water can be ensured on a worldwide scale in the close future. I.e. meeting water demand with minimal use of energy. Ideally methods developed can be implemented without costly renovations to already existing infrastructure. 
+
+The purpose of a water distribution network is to supply water from a production facility to end-consumers. For critical infrastructure, such as a water distribution network, reliability is of the highest priority, which means that optimal control of these networks must be designed such that the control method used operates in a safe manner. 
+
+Water distribution networks have a complex topology \cite{MathiasJeppe730,Rathore1030}, which consists of different component such as pipes, valves, pumps and elevated water reservoirs. This means it might be difficult to model such a network, and even if it is possible, the model might not be sufficiently good to base control on. Hence this project focusses on model-free control of water distribution networks and will not devote time on developing models based on graph theory as the authors previously have done. 
+
+\section{Project Description}\label{sec:projectDescription} 
+
+The main objective of the semester-project is to use machine learning approaches to design a model-free and optimal controller for a water distribution network.
+
+The dynamics of a water distribution network with an elevated reservoir is dictated by the input- and output flow of the network. To guarantee demands are met, the elevated water reservoir supplies a passive flow to the network when pumps are insufficient. This means that the control problem becomes control of reservoir water level to satisfy consumer demands. Furthermore, energy consumption is incorporated into the control problem. As the water level increases in the elevated water reservoir, so does the differential pressure across the pumping station. This results in higher power consumption at the pumping station when supplying the required flow into the system. This creates the optimality problem of minimising energy consumption without letting the reservoir dry out. 
+
+In practice pumping stations rarely have the ability to do speed control of individual pumps, but use on/off control of a finite set of pumps. Such discrete actions is embedded in the problem structure when using reinforcement learning methods, making it a suitable solution method.
+
+\textit{This project will apply a machine learning technique called reinforcement learning to solve the before mentioned water distribution network optimality problem. Three different versions of reinforcement learning will be examined in order to compare their performance. The three methods are: tabular reinforcement learning, semi-continuous-state discrete action reinforcement learning, and continuous-state discrete-action reinforcement learning.}
+
+\newpage \clearpage
+
+\section{Report outline}\label{sec:projectOutline}
+
+The rest of the report is organised as follows:
+
+\textbf{\cref{chap:RL}} gives an introduction to reinforcement learning. First the interactions between agent and environment is explained. The Bellman optimality equation for the value function and action value function is presented. Two temporal difference methods are presented; on-policy Sarsa and off-policy Q-learning. \cref{sec:FuncApprox} extends the concept of Q-learning into function approximation Q-Learning, which gives a solution to the dimensionality problem caused by big state-action tables in tabular Q-learning.
+
+\textbf{\cref{chap:WDN}} presents the small scale water distribution network test setup. The test setup includes one pumping station, one consumer zone and an elevated water reservoir. A model of the elevated water reservoir dynamic is presented along with equations describing the power provided to the water by the pumping station. Water consumption data provided by Grundfos is presented in the end of the chapter.
+
+\textbf{\cref{chap:RLOnWDN}} applies reinforcement learning methods developed in \cref{chap:RL} to the test setup presented in \cref{chap:WDN}. This includes development of a cost function, state and action selection based on the formulated cost function and action value function update laws for both tabular Q-learning and function approximation Q-learning methods. This chapter also presents basis functions used in function approximation reinforcement learning. 
+
+\textbf{\cref{chap:Simulation}} presents results obtained from a simulated environment, using both tabular and function approximation reinforcement learning methods. Hyperparameters are swept to find good parameters for all methods. Convergence properties of the methods are compared in order to find the best control method candidate. 
+
+\textbf{\cref{chap:Results}} presents results obtained when applying the best control method candidate, found in \cref{chap:Simulation}, to the test setup in the Smart Water Infrastructure Laboratory at Aalborg University.
+
+\textbf{\cref{chap:Discussion}} presents a discussion on the performance of reinforcement learning methods for simulation test. Furthermore real world implementation of reinforcement learning methods is discussed.
+
+\textbf{\cref{chap:Conclusion}} concludes on the objectives achieved in the project and presents ideas for future work needed done before methods used in this project can be used as a real world control method.    
+
+\newpage

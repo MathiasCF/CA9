@@ -1,0 +1,43 @@
+\chapter*{Summary of Notation}
+
+{\Large Tabular Reinforcement Learning notation}
+\begin{tabbing}
+	\hspace{40mm} \= \kill
+	
+	$\alpha$ \> Learning rate/Step size \\
+	$\gamma$ \> Discount factor \\
+	$ \epsilon $ \> $ \epsilon $-greedy parameter deciding for random action selection \\
+	$ s(k) $ \> State at iteration $ k $\\
+	$ a(k) $ \> Action taken at iteration $ k $ \\
+	$ \mathcal{S},\mathcal{A} $ \> Closed sets of states and actions \\
+	$ R(k+1) $ \> Reward for bringing the environment from $ s(k) \rightarrow s(k+1) $ \\
+	$ J(k+1) $ \> Cost for bringing the environment from $ s(k) \rightarrow s(k+1) $ \\
+	$ Q\bigg(s(k),a(k)\bigg) $ \> Estimates of action-value function $ Q_{\pi} $ at iteration $ k $ \\
+\end{tabbing}
+
+{\Large Function Approximation Reinforcement Learning Notation:}
+\begin{tabbing}
+	\hspace{40mm} \= \kill
+	$ \textbf{w} $ \> Weight vector \\ 
+	$ \hat{Q}\bigg(s(k),a(k),\textbf{w}\bigg) $ \> Approximate of action value function given weight vector \textbf{w}\\
+	$ \textbf{x}\bigg(s(k)\bigg) $\> Vector of features visible when in state $ s(k) $ \\
+	$ \nabla_{\textbf{w}} \hat{Q}\bigg(s(k),a(k),\textbf{w}\bigg) $ \> Column vector og partial derivatives of $ \hat{Q}(s,a,\textbf{w}) $ with respect to \textbf{w}\\
+	$\textbf{w}_{t(k),a(k)}$ \> Weight vectors for each discrete time $ t $ and action $ a $ at iteration k \\
+	$\textbf{w}_{a(k)}$ \> Weight vectors for discrete each action a at iteration k \\
+\end{tabbing}
+
+\newpage
+
+{\Large Water Distribution Network Notation:}
+\begin{tabbing}
+	\hspace{40mm} \= \kill
+	$q(k) $ \> Water flow from pumping station \\ 
+	$d(k) $ \> Water flow into consumer section \\ 
+	$ h_{ewr} $ \> Water height in elevated water reservoir \\
+	$ A $ \> Cross-sectional area of elevated water reservoir \\
+	$ \Delta{p} $ \> Differential pressure over pumping station \\
+	$ \Delta{z} $ \> Drop in pressure due to geodesic pressure \\
+	$ \lambda(\cdot) $ \> Drop in pressure due to friction i a pipe \\
+	$ B\bigg(h_{ewr}(k)\bigg) $ \> Barrier function with water level in elevated water reservoir as input \\
+\end{tabbing}
+
